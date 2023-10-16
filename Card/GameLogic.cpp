@@ -65,12 +65,6 @@ void GameLogic::OnClick(int x, int y)
 
 	if (mPlayer1 == false&&mPlayer2==true)
 	{
-		Gdiplus::SolidBrush brush(Gdiplus::Color(255, 79, 64));
-		Gdiplus::Font font{ L"맑은 고딕", 20 };
-		Gdiplus::StringFormat format;
-		Gdiplus::PointF pos{ 910.0f, 50.0f };
-		format.SetAlignment(Gdiplus::StringAlignmentCenter);
-		format.SetLineAlignment(Gdiplus::StringAlignmentCenter);
 
 		for (auto& card : mDeck1)
 		{
@@ -143,8 +137,6 @@ void GameLogic::OnClick(int x, int y)
 		{
 			RECT rect = { static_cast<LONG>(mCountRect1.GetLeft()),static_cast<LONG>(mCountRect2.GetTop()),static_cast<LONG>(mCountRect2.GetRight()),static_cast<LONG>(mCountRect2.GetBottom()) };
 			
-
-
 			if (mpSelectedCard2 == nullptr)
 			{
 				mpSelectedCard2 = pCard2;
