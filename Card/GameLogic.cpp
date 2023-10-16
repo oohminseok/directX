@@ -196,12 +196,6 @@ void GameLogic::OnClick(int x, int y)
 	}
 }
 
-Gdiplus::Graphics* GameLogic::SetGraphics(Gdiplus::Graphics& graphics)
-{
-	mGraphics = &graphics;
-	return mGraphics;
-}
-
 void GameLogic::CreateCards()
 {
 	std::vector<Type> types;
