@@ -28,7 +28,6 @@ public:
 	void Release();
 	void Draw(Gdiplus::Graphics& graphics);
 	void OnClick(int x, int y);
-	Gdiplus::Graphics* SetGraphics(Gdiplus::Graphics& graphics);
 
 private:
 	void CreateCards();
